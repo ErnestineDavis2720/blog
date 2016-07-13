@@ -12,7 +12,7 @@
 <div id="sidebar">
 <div id="logo">
 <%= link_to root_path do %>
-<%= image_tag "Xwater.jpeg" %>
+<%= image_tag "water.jpeg", height: "40", width: 40 %>
 <% end %>
 </div>
 
@@ -36,7 +36,7 @@
       <p>All Posts</p>
 
       <div class="buttons">
-      <button class="button"> <%= link_to "New Post", new_post_path %></button>
+     <%= link_to "New Post", new_post_path, class: "button" %>
       <button class="button"> Log Out</button>
     </div>
 
